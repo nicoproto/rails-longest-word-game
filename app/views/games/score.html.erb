@@ -1,0 +1,17 @@
+<div class="container">
+  <h1><%= @message %></h1>
+
+  <h3>Your grid was:</h3>
+  <div class="m-3">
+    <% @grid.each do |letter| %>
+      <button class="btn btn-primary"> <%= letter[0] %></button>
+    <% end %>
+  </div>
+  <h4 class="m-3">Your word was: <%= @word %></h4>
+  <h5 class="m-3">You score is: <%= @score %></h5>
+
+<h1><%= @current_score %></h1>
+
+
+  <%= link_to "Try again", root_path %>
+</div>
